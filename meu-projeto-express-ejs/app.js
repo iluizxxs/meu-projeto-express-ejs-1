@@ -2,6 +2,19 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+const produtos = [
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""},
+  {id: 1, nome: "", preco:"", descricao:""}
+]
+
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
