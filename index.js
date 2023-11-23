@@ -11,8 +11,7 @@ const produtos = [
     {id: 1, nome: "Camisa do Atletico de Madrid", preco:"200", descricao:"Camisa do Atletico de Madrid"}
   ]
 
- 
-  }
+
 
 for (let produto of produtos){
     console.log(produto)
@@ -25,5 +24,5 @@ for (let produto of produtos){
   }
   
   
-  let final =buscarProdutosPorId(2)
+  let final = buscarProdutosPorId(2)
   console.log(final)
