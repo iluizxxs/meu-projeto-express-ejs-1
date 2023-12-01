@@ -16,19 +16,17 @@ const produtos = [
 ]
 
 function buscarProdutosPorId(id){
-  const produto = produtos.find(produto => produto.id = id);
-  return produto
+  const produto = produtos.find(produtos => produto.id = id);
+  return produto || null
 }
-
-app.set('view engine', 'ejs');
-app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.render('index', {produtos});
 });
 
 app.get('/produtos', (req, res) => {
-  res.render('produtos', { message: 'Mercado 1000 em 1!' });
+  const produto = buscarProdutoPorId (req.params.id)
+  res.render('produtos', { produto });
 });
 
 app.listen(port, () => {
